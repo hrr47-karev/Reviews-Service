@@ -28,5 +28,20 @@ From within the root directory:
 npm install -g webpack
 npm install
 ```
-
-
+### Scripts
+Start the server
+```
+npm start
+```
+Build the bundle.js
+```
+npm run build
+```
+Seed the database with dummy data
+```
+npm run seed
+```
+Run tests
+```
+npm run test
+```
