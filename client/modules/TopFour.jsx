@@ -16,21 +16,17 @@ class TopFour extends React.Component {
 
     set() {
       let result = [];
-      console.log('something');
       for (let i = 0; i < 4; i += 1) {
         if (this.props.reviews[i] !== undefined) {
           result.push(this.props.reviews[i]);
         }
       }
-      console.log(result);
       this.setState({
         top: result
       });
-      console.log(this.state.top);
     }
 
     render() {
-
       return (
         <div className={style.reviewgrid}>
           {this.props.reviews.map((review) =>
@@ -39,7 +35,6 @@ class TopFour extends React.Component {
         </div>
       )
     }
-
 }
 
 export default TopFour;
