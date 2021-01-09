@@ -96,7 +96,6 @@ class App extends React.Component {
       if (err) {
         console.log('ERROR IN GET, CLIENT ', err)
       } else {
-        console.log(res.data);
         this.setState({
           reviews: res.data,
           mounted: true
