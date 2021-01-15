@@ -15,7 +15,6 @@ app.get('/hostels/:id/api/reviews', (req, res) => {
       console.log(err);
       res.sendStatus(500);
     } else {
-      console.log('done');
       res.json(response);
     }
   });
